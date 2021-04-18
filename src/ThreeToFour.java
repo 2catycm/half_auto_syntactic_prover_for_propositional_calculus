@@ -54,7 +54,7 @@ public class ThreeToFour {
         return schemata.toArray(schemata.toArray(new String[0]));
     }
 
-    private static String[][] scanSub(Scanner subIn) {//这段代码要收藏，经常扫描东西的时候不知道大小，也不知道怎么分割
+     static String[][] scanSub(Scanner subIn) {//这段代码要收藏，经常扫描东西的时候不知道大小，也不知道怎么分割
         ArrayList<String[]> formulas = new ArrayList<>();
         while(subIn.hasNextLine()){
             String NextLine;

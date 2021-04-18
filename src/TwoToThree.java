@@ -48,14 +48,14 @@ public class TwoToThree {
         }
         System.out.println(subformulas);
     }
-    private static String 预处理输入(String formula) {
+    static String 预处理输入(String formula) {
         formula = "("+formula+")";//假设输入没有多余括号，最外层是省略的
 //        //避免引入多余括号
 //        if(formula.startsWith("((")&&formula.endsWith("))"))
 //            return 预处理输入(formula.substring(0,formula.length()-2).substring(2));
         return formula.replaceAll(" ","");
     }
-    private static String 预处理输入2(String formula) {
+    static String 预处理输入2(String formula) {
         formula = "("+formula+")";
         //避免引入多余括号
         if(formula.startsWith("((")&&formula.endsWith("))"))
@@ -107,7 +107,7 @@ public class TwoToThree {
             return operation.operate(solve(subs[0], va),solve(subs[1], va));
         }
     }
-    private static String[] sub(String formula) {
+    static String[] sub(String formula) {
         for(String operator:OperationFactory.alphabet){
 
             int ParenthesisFlux = 0;
