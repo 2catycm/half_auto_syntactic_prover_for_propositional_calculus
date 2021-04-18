@@ -83,7 +83,7 @@ public class TwoToThree {
         return c;
     }
 
-    private static String[] scan(String formula) {
+    static String[] scan(String formula) {
         Map<String, Integer> map = new TreeMap<>();//按照String来升序排序
         for (int i = 0; i <formula.length() ; i++) {
             String a = ""+formula.charAt(i);
